@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="./styles/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,54 +9,35 @@
 </head>
 
 <body>
-    <div class="split left">
-        <div class="centered">
-            <img src="./images/img_avatar2.jpeg" alt="Human image">
-            <h1 class="headingimg">Jose Niko</h1>
-            <p class="imagetext">Developer</p>
-        </div>
-    </div>
 
-    <div class="split right">
-        <div class="centered">
-            <h1 class="textheading">About Me</h1>
-            <p class="his-attributes"><i>28 years / Lviv / Freelance</i></p>
-            <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio rem
-                nobis
-                pariatur officiis molestias dolor quaerat possimus saepe rerum praesentium a blanditiis doloribus
-                delectus nam atque ipsum, ad consequatur nulla!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit necessitatibus, facere repellendus qui
-                corrupti facilis repellat quod dolorem, nihil dolores maxime! Eos voluptatibus reiciendis magnam enim
-                quis id maiores porro.
-            </p>
-            <div class="my-services">
-                <h2 class="horizontal-line">My services</h2>
+    <label for="education">EDUCATION: </label>
+    <select name="education" id="education" onchange="educationData()">
+        <option value="cs" checked>BS(CS)</option>
+        <option value="se">BS(SE)</option>
+        <option value="bba">BBA</option>
+        <option value="acf">BS(A&F)</option>
+    </select>
+    <br>
+    <br>
+    <label for="profession">PROFESSION: </label>
+    <select name="profession" id="profession" onchange="professionPeoples()">
+        <option value="Web Developer" checked>Web Developer</option>
+        <option value="Android Developer">Android Developer</option>
+        <option value="IOS Developer">IOS Developer</option>
+    </select>
 
-                <div class="services">
-                    <h3 class="headings-services">development</h3>
-                    <p class="description-services">Building a custom tailored solution based on your requirements
-                    </p>
-                </div>
-                <div class="services">
-                    <h3 class="headings-services">SEO optimization</h3>
-                    <p class="description-services">Audit your website perform technical improvements and write
-                        meta
-                        tags</p>
-                </div>
-                <div class="services">
-                    <h3 class="headings-services">data base</h3>
-                    <p class="description-services">SSl certificate installation and configuration redirection
-                        configuration on your website</p>
-                </div>
-                <div class="services">
-                    <h3 class="headings-services">data security</h3>
-                    <p class="description-services">Strategy with leading data protection technology to safeguard your
-                        critical data</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
+    <br>
+    <br>
+    <label for="">GENDER:</label>
+    <label for="">Male
+        <input type="radio" name="gender" checked="checked" value="male">
+    </label>
+    <label for="">Female
+        <input type="radio" name="gender" value="female">
+    </label>
+
+
+    <script src="app.js"></script>
 </body>
 
 </html>
